@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geolocation and Distance Calculation with Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <style>
+        #index-map { height: 400px; width: 100%; }
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f7eadc;
+            font-size: 17px;
+            margin-left: 30px;
+        }
+        
+        #find-me {
+            padding: 15px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #9d8160;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            margin-left: 30px;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <button id="find-me">Show my location and distance to the bakery</button>
+    <button id="find-me"><a href="index.html">Back to Home Page</a></button>
+    <p id="status"></p>
+    <div id="index-map"></div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="../static/geo.js"></script>
+</body>
+</html>

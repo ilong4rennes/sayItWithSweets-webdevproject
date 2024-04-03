@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Amanda Lu">
+    <meta name="keywords" content="Say It With Sweets">
+    <meta name="description" content="Say It With Sweets Website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="../static/script.js"></script>
+    <title>Products</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <div id="container">
+        <div id="navigation">
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+            
+        <main>
+            <div id="content">
+                <div id="cupcakes">
+                    <h2>Cupcakes</h2>
+                    <!-- Images used to open the lightbox -->
+                    <div class="row">
+                        <div class="column">
+                        <img src="../static/images/p1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="some colorful cupcakes with unicorn shape">
+                        </div>
+                        <div class="column">
+                        <img src="../static/images/p2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="some pink and blue cupcakes">
+                        </div>
+                        <div class="column">
+                        <img src="../static/images/p3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" alt="cute cupcakes that look like puppies">
+                        </div>
+                        <div class="column">
+                        <img src="../static/images/p4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow" alt="a dish of colorful cupcakes">
+                        </div>
+                    </div>
+                    
+                    <!-- The Modal/Lightbox -->
+                    <div id="myModal" class="modal">
+                        <span class="close cursor" onclick="closeModal()">&times;</span>
+                        <div class="modal-content">
+                    
+                        <div class="mySlides">
+                            <div class="numbertext">1 / 4</div>
+                            <img src="../static/images/p1.jpg" style="width:100%" alt="some colorful cupcakes with unicorn shape">
+                        </div>
+                    
+                        <div class="mySlides">
+                            <div class="numbertext">2 / 4</div>
+                            <img src="../static/images/p2.jpg" style="width:100%" alt="some pink and blue cupcakes">
+                        </div>
+                    
+                        <div class="mySlides">
+                            <div class="numbertext">3 / 4</div>
+                            <img src="../static/images/p3.jpg" style="width:100%" alt="cute cupcakes that look like puppies">
+                        </div>
+                    
+                        <div class="mySlides">
+                            <div class="numbertext">4 / 4</div>
+                            <img src="../static/images/p4.jpg" style="width:100%" alt="a dish of colorful cupcakes">
+                        </div>
+                    
+                        <!-- Next/previous controls -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    
+                        <!-- Caption text -->
+                        <div class="caption-container">
+                            <p id="caption"></p>
+                        </div>
+                    
+                        <!-- Thumbnail image controls -->
+                        <div class="column">
+                            <img class="demo" src="../static/images/p1.jpg" onclick="currentSlide(1)" alt="Cupcakes with unicorn shape">
+                        </div>
+                    
+                        <div class="column">
+                            <img class="demo" src="../static/images/p2.jpg" onclick="currentSlide(2)" alt="Pink and blue cupcakes">
+                        </div>
+                    
+                        <div class="column">
+                            <img class="demo" src="../static/images/p3.jpg" onclick="currentSlide(3)" alt="Cute cupcakes that look like puppies">
+                        </div>
+                    
+                        <div class="column">
+                            <img class="demo" src="../static/images/p4.jpg" onclick="currentSlide(4)" alt="Colorful cupcakes">
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="cakes">
+                    <h2>Custom Made Cakes</h2>
+                    <!-- Images used to open the lightbox -->
+                    <div class="row">
+                        <div class="column">
+                        <img src="../static/images/d1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="rose cake">
+                        </div>
+                        <div class="column">
+                        <img src="../static/images/d2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="50th birthday cake">
+                        </div>
+                        <div class="column">
+                        <img src="../static/images/d3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" alt="cake with cute cat">
+                        </div>
+                        <div class="column">
+                        <img src="../static/images/d4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow" alt="90th birthday cake">
+                        </div>
+                    </div>
+                    
+                    <!-- The Modal/Lightbox -->
+                    <div id="myModal" class="modal">
+                        <span class="close cursor" onclick="closeModal()">&times;</span>
+                        <div class="modal-content">
+                    
+                        <div class="mySlides">
+                            <div class="numbertext">1 / 4</div>
+                            <img src="../static/images/d1.jpg" style="width:100%" alt="rose cake">
+                        </div>
+                    
+                        <div class="mySlides">
+                            <div class="numbertext">2 / 4</div>
+                            <img src="../static/images/d2.jpg" style="width:100%" alt="50th birthday cake">
+                        </div>
+                    
+                        <div class="mySlides">
+                            <div class="numbertext">3 / 4</div>
+                            <img src="../static/images/d3.jpg" style="width:100%" alt="cake with cute cat">
+                        </div>
+                    
+                        <div class="mySlides">
+                            <div class="numbertext">4 / 4</div>
+                            <img src="../static/images/d4.jpg" style="width:100%" alt="90th birthday cake">
+                        </div>
+                    
+                        <!-- Next/previous controls -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    
+                        <!-- Caption text -->
+                        <div class="caption-container">
+                            <p id="caption"></p>
+                        </div>
+                    
+                        <!-- Thumbnail image controls -->
+                        <div class="column">
+                            <img class="demo" src="../static/images/d1.jpg" onclick="currentSlide(1)" alt="Rose cake">
+                        </div>
+                    
+                        <div class="column">
+                            <img class="demo" src="../static/images/d2.jpg" onclick="currentSlide(2)" alt="50th Birthday cake">
+                        </div>
+                    
+                        <div class="column">
+                            <img class="demo" src="../static/images/d3.jpg" onclick="currentSlide(3)" alt="Cake with cute cat">
+                        </div>
+                    
+                        <div class="column">
+                            <img class="demo" src="../static/images/d4.jpg" onclick="currentSlide(4)" alt="90th Birthday cake">
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="cookies">
+                    <h2>Cookie Trays</h2>
+                    <h4>
+                        &emsp; Ideal for any gathering, our exquisite cookie trays add a touch of 
+                        sweetness to parties, weddings, showers, and corporate events. Select the 
+                        perfect size for your occasion and reach out to place your order, ensuring 
+                        a minimum of five business days in advance.
+                    </h4>
+                    <h4>
+                        &emsp; You can choose up to 5 kinds of cookies per tray. $1.00 per dozen more on trays.
+                    </h4>
+                    <div id="cards">
+                        <div id="icon1">
+                            <h3>Cookies by dozen</h3>
+                            <div id="pricing"> 
+                                <h4>small - 5 dozen - $54.00</h4>
+                                <h4>medium - 10 dozen - $97.00</h4>
+                                <h4>large - 12 dozen - $112.00</h4>
+                            </div>
+                        </div>
+
+                        <div id="icon2">
+                            <h3>Holiday trays</h3>
+                            <div id="pricing">
+                                <h4>small - 5 dozen - $66.00</h4>
+                                <h4>medium - 10 dozen - $109.00</h4>
+                                <h4>large - 12 dozen - $124.00</h4> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div class="accordion-section">
+                            <div class="accordion-section-title">Different Kinds of Cookies to Choose:</div>
+                            <div class="accordion-section-content">
+                                <p>almond chocolate chunk</p>
+                                <p>chocolate chip</p>
+                                <p>cookies & cream</p>
+                                <p>coconut</p>
+                                <p>cream cheese mints*</p>
+                                <p>drop sugar cookie -  sugar sprinkles </p>
+                                <p>drop sugar cookie- chocolate drizzle</p>
+                                <p>Italian Easter</p>
+                                <p>orange cream</p>
+                                <p>peanut butter</p>
+                                <p>peanut butter blossom*</p>
+                                <p>pumpkin chocolate chip (seasonal)</p>
+                                <p>raspberry thumbprints​</p>
+                                <p>​red velvet peanut butter blossoms*</p>
+                                <p>snickerdoodles</p>
+                                <p>snowballs</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2>View All Products</h2>
+                    <div class="accordion">
+                        <div class="accordion-section">
+                            <div class="accordion-section-title">Holidays</div>
+                            <div class="accordion-section-content">
+                                <p>Our holiday cookie trays are perfect for any celebration. We offer custom trays for Christmas, Easter, Halloween, Valentine's Day and more. Please order at least 48 hours in advance. <a href="../views/contact.html">Contact us</a> for more information.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-section">
+                            <div class="accordion-section-title">Blue and White</div>
+                            <div class="accordion-section-content">
+                                <p>Penn State Moms - Surprise your special student with one of our blue & white sweet treats. Please order at least 48 hours in advance. <a href="../views/contact.html">Contact us</a> for more information.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-section">
+                            <div class="accordion-section-title">Cupcake Bouquets</div>
+                            <div class="accordion-section-content">
+                                <p>Cupcake bouquets are a truly unique gift for any occasion. Each box is filled with 9 beautifully decorated flower cupcakes and topped with a decorative bow. Vanilla and chocolate are sold for $32.00. Please order at 4  days in advance. <a href="../views/contact.html">Contact us</a> for more information.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <script src="../static/jquery-3.6.0.min.js"></script>
+                    <script>
+                        $(document).ready(function() {
+                            $('.accordion-section-title').click(function() {
+                                // Close all sections
+                                $('.accordion-section-content').slideUp(300);
+                                $('.accordion-section-title').removeClass('open');
+                    
+                                // Open the clicked section
+                                if ($(this).next('.accordion-section-content').is(':hidden')) {
+                                    $(this).next('.accordion-section-content').slideDown(300);
+                                    $(this).addClass('open');
+                                }
+                            });
+                        });
+                    </script>
+                </div>
+            </div>
+        </main>
+        
+        <footer class="footer">
+            <h3>Say It With Sweets</h3>
+            <div class="social-media">
+                <a target="_blank" alt="instagram" href="https://www.instagram.com/sayitwithsweets11/"><img class="footer_icon" src="../static/images/instagram.png"></a>
+                <a target="_blank" alt="facebook" href="https://www.facebook.com/say.it.with.sweets"><img class="footer_icon" src="../static/images/facebook.png"></a>
+                <a target="_blank" alt="yelp" href="https://www.yelp.com/biz/say-it-with-sweets-altoona?osq=say+it+with+sweets"><img class="footer_icon" src="../static/images/yelp.png"></a>
+            </div>
+            <div class="credits">
+                <p>&copy; 2024 Say It With Sweets</p>
+                <p>Address: 1307 Pleasant Valley Blvd. Altoona PA 16602 US </p>
+                <p>Phone: +1 814-937-1564</p>
+                <p>Email: <a href="mailto:info@sayitwithsweets.com">info@sayitwithsweets.com</a></p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

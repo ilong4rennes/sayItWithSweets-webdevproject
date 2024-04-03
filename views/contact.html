@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Amanda Lu">
+    <meta name="keywords" content="Say It With Sweets">
+    <meta name="description" content="Say It With Sweets Website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <script defer src="../static/script.js"></script>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <div id="container">
+        <div id="navigation">
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+            
+        <main>
+            <div id="content">
+                <h2>Get in touch with us!</h2>
+
+                <div class="main_picture">
+                    <img class="main_pic" src="../static/images/cupcake.jpeg" alt="a box of tasty cupcakes" onclick="displayMessage()">
+                </div>
+
+                <script>
+                    function displayMessage() {
+                        alert("A box of tasty cupcakes are waiting for you! Please contact us to place an order."); 
+                    }
+                </script>
+
+                <button id="question" onclick="displayQuestionsMessage()">Questions?</button>
+
+                <script>
+                    function displayQuestionsMessage() {
+                        alert("If you have any questions, please feel free to use the form to contact us. We are happy to help!"); 
+                    }
+                </script>
+                
+                <form id="contact-form" onsubmit="return validate()" action="mailto:info@sayitwithsweets.com" method="post" enctype="text/plain"> 
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+                    
+                    <label for="zip">Zip Code:</label>
+                    <input type="text" id="zip" name="zip" required pattern="[0-9]{5}" placeholder="12345">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="newsletter">Would you like to join our email newsletter?</label>
+                    <input type="checkbox" id="newsletter" name="newsletter">
+            
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+            
+                    <button type="submit">Send</button>
+                </form>
+
+                <h2>Contact Information</h2>
+                <div id="contact_info">
+                    <table>
+                        <tr>
+                            <th>Address</th>
+                            <th>1307 Pleasant Valley Blvd, Altoona, PA 16602, USA</th>
+                        </tr>
+                        <tr>
+                            <th>Phone Number</th>
+                            <th>+1 814-937-1564</th>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <th><a href="mailto:info@sayitwithsweets.com">info@sayitwithsweets.com</a></th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </main>
+        
+        
+        <footer class="footer">
+            <h3>Say It With Sweets</h3>
+            <div class="social-media">
+                <a target="_blank" alt="instagram" href="https://www.instagram.com/sayitwithsweets11/"><img class="footer_icon" src="../static/images/instagram.png"></a>
+                <a target="_blank" alt="facebook" href="https://www.facebook.com/say.it.with.sweets"><img class="footer_icon" src="../static/images/facebook.png"></a>
+                <a target="_blank" alt="yelp" href="https://www.yelp.com/biz/say-it-with-sweets-altoona?osq=say+it+with+sweets"><img class="footer_icon" src="../static/images/yelp.png"></a>
+            </div>
+            <div class="credits">
+                <p>&copy; 2024 Say It With Sweets</p>
+                <p>Address: 1307 Pleasant Valley Blvd. Altoona PA 16602 US </p>
+                <p>Phone: +1 814-937-1564</p>
+                <p>Email: <a href="mailto:info@sayitwithsweets.com">info@sayitwithsweets.com</a></p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
